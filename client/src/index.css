@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-card hover:shadow-card-hover transition-shadow duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-monopoly-green hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-500 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-danger {
+    @apply bg-monopoly-red hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .game-card {
+    @apply bg-white rounded-lg p-3 m-1 border-2 border-gray-300 hover:border-monopoly-blue cursor-pointer transition-all duration-200 select-none;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .property-card {
+    @apply game-card;
+  }
+  
+  .money-card {
+    @apply game-card bg-green-100 border-green-300;
+  }
+  
+  .action-card {
+    @apply game-card bg-blue-100 border-blue-300;
+  }
+  
+  .property-brown {
+    @apply border-monopoly-brown bg-yellow-50;
+  }
+  
+  .property-light_blue {
+    @apply border-monopoly-lightblue bg-blue-50;
+  }
+  
+  .property-pink {
+    @apply border-monopoly-pink bg-pink-50;
+  }
+  
+  .property-orange {
+    @apply border-monopoly-orange bg-orange-50;
+  }
+  
+  .property-red {
+    @apply border-monopoly-red bg-red-50;
+  }
+  
+  .property-yellow {
+    @apply border-monopoly-yellow bg-yellow-50;
+  }
+  
+  .property-green {
+    @apply border-monopoly-green bg-green-50;
+  }
+  
+  .property-dark_blue {
+    @apply border-monopoly-darkblue bg-blue-100;
+  }
+  
+  .property-utility {
+    @apply border-monopoly-purple bg-purple-50;
+  }
+  
+  .property-railroad {
+    @apply border-gray-800 bg-gray-100;
+  }
+} 
