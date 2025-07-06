@@ -9,7 +9,7 @@ const GamePage = () => {
   const { lobbyId } = useParams();
   const navigate = useNavigate();
   const [selectedCards, setSelectedCards] = useState([]);
-  const [showActionMenu, setShowActionMenu] = useState(false);
+  // const [showActionMenu, setShowActionMenu] = useState(false); // TODO: Implement action menu
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const {
